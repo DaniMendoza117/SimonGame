@@ -1,5 +1,6 @@
 
-var buttonColours = ["red", "blue", "green", "yellow"];
+var buttonColours = ["red", "blue", "purple", "orange"];
+
 
 var gamePattern = [];
 var userClickedPattern = [];
@@ -27,6 +28,7 @@ $(".btn").click(function() {
 });
 
 function checkAnswer(currentLevel) {
+var distractor
 
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
       if (userClickedPattern.length === gamePattern.length){
@@ -37,7 +39,7 @@ function checkAnswer(currentLevel) {
     } else {
       playSound("wrong");
       $("body").addClass("game-over");
-      $("#level-title").text("Juego terminado, Pulsa cualquier tecla para jugar de nuevo");
+      $("#level-title").text("GAME OVER, Presione 'A' Para continuar");
 
       setTimeout(function () {
         $("body").removeClass("game-over");

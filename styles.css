@@ -1,37 +1,73 @@
 body {
   text-align: center;
-  background-color: #011F3F;
-
+  background-color: transparent;
+  background-image: url("wall.jpg");
 }
-.team{
-  color: white;
+
+#ng {
+  font-family: 'Monoton', cursive;
+  font-size: 3rem;
+  margin:  1%;
+  color: #FF6600;
+  background-color: black;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  font-size: 2rem;
+  color: #FF6600;
+  background-color: black;
 }
 
+#names {
+  font-family:'Andika Basic', sans-serif ;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
+}
 
 .container {
   display: block;
-  flex-grow: 2;
-  flex-flow: wrap;
   width: 50%;
   margin: auto;
 
 }
 
-
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 120px;
-  width: 120px;
+  height: 200px;
+  width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.p1{
+       justify-content: center;
+}
+
+#verde {
+  font-family: 'DotGothic16',sans-serif;
+
+  color: yellow;
+}
+
+#rojo {
+  font-family: 'DotGothic16',sans-serif;
+  text-align: center;
+  color: black;
+}
+
+#negro {
+  font-family: 'DotGothic16',sans-serif;
+  text-align: center;
+  color: white;
+}
+
+#morado {
+  font-family: 'DotGothic16',sans-serif;
+  text-align: center;
+  color: purple;
 }
 
 .game-over {
@@ -43,16 +79,16 @@ body {
   background-color: red;
 }
 
-.green {
-  background-color: green;
-}
-
 .blue {
   background-color: blue;
 }
 
-.yellow {
-  background-color: yellow;
+.purple {
+  background-color: purple;
+}
+
+.orange {
+  background-color: orange;
 }
 
 .pressed {
